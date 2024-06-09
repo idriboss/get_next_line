@@ -6,7 +6,7 @@
 /*   By: ibaby <ibaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 22:20:37 by ibaby             #+#    #+#             */
-/*   Updated: 2024/05/30 19:06:42 by ibaby            ###   ########.fr       */
+/*   Updated: 2024/06/09 23:30:22 by ibaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ char	*ft_strdup(const char *src)
 	char	*str;
 	int		size;
 
+	if (!src)
+		return (NULL);
 	size = ft_strlen((char *)src) + 1;
 	str = malloc(sizeof(char) * size);
 	if (!str)

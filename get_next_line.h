@@ -6,7 +6,7 @@
 /*   By: ibaby <ibaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/29 22:26:50 by ibaby             #+#    #+#             */
-/*   Updated: 2024/05/29 22:28:52 by ibaby            ###   ########.fr       */
+/*   Updated: 2024/06/09 23:27:19 by ibaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <unistd.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1
+#  define BUFFER_SIZE 64
 # endif
 
 char	*get_next_line(int fd);
@@ -30,7 +30,7 @@ size_t	ft_strlen(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 int		is_nl(char *str);
 char	*ft_strdup(const char *src);
-char	*before_line(char *all);
+char	*re_before_line(char *all);
 void	after_line(char *all, char *dest);
 void	ft_clean(char *save);
 
